@@ -29,11 +29,10 @@ fn main() {
                 Err(_) => continue,
             };
 
+            // °C = (°F − 32) x 5/9
             let output_temp: f64 = (input_temp - 32.0) * 5.0 / 9.0;
 
             break println!("The temperature in Celsius is: {output_temp}");
-
-            // C = 5/9(F-32)
         }
     }
 
@@ -52,11 +51,10 @@ fn main() {
                 Err(_) => continue,
             };
 
+            //  °F = (°C × 9/5) + 32
             let output_temp: f64 = (input_temp * 9.0 / 5.0) + 32.0;
 
             break println!("The temperature in Fahrenheit is: {output_temp}");
-
-            // C = 5/9(F-32)
         }
     }
 }
