@@ -57,4 +57,9 @@ fn main() {
             break println!("The temperature in Fahrenheit is: {output_temp}");
         }
     }
+    // This always activates:
+    
+    // if !choice.eq(&c2f) || !choice.eq(&f2c) {
+    //     return println!("Not an input.");
+    // }
 }
