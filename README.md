@@ -1,3 +1,3 @@
 # learning-rust
 
-My Rust practice exercises!
+Exercises I've used to practice Rust!
