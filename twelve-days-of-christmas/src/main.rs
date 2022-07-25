@@ -1,8 +1,6 @@
 use std::io;
 
 fn main() {
-    
-
     loop {
         let mut n = String::new();
 
@@ -21,17 +19,66 @@ fn main() {
 }
 
 fn queue_lyrics() {
-    let a = ["2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th"];
+    let a = [
+        "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th",
+    ];
+    let mut remaining = 11;
 
     println!("On the 1st day of Christmas");
     println!("My true love sent to me");
-    println!("A partridge in a pear tree!");
+    println!("A partridge in a pear tree!\n");
 
     for number in a {
         println!("On the {number} day of Christmas");
         println!("My true love sent to me");
-        println!("Two turtle doves");
-        println!("And a partridge in a pear tree!")
+
+        while remaining < 2 {
+            println!("Twelve drummers drummin'");
+            break;
+        }
+        while remaining < 3 {
+            println!("Eleven pipers pipin'");
+            break;
+        }
+        while remaining < 4 {
+            println!("Ten lords a leapin'");
+            break;
+        }
+        while remaining < 5 {
+            println!("Nine ladies dancin'");
+            break;
+        }
+        while remaining < 6 {
+            println!("Eight maids a milkin'");
+            break;
+        }
+        while remaining < 7 {
+            println!("Seven swans a swimmin'");
+            break;
+        }
+        while remaining < 8 {
+            println!("Six geese a layin'");
+            break;
+        }
+        while remaining < 9 {
+            println!("Five golden rings!");
+            break;
+        }
+        while remaining < 10 {
+            println!("Four calling birds");
+            break;
+        }
+        while remaining < 11 {
+            println!("Three french hens");
+            break;
+        }
+        while remaining < 12 {
+            println!("Two turtle doves");
+            break;
+        }
+
+        remaining -= 1;
+        println!("And a partridge in a pear tree!\n");
     }
 }
 
